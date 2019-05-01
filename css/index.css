@@ -143,11 +143,7 @@ body {
 }
 :root {
   font-size: 62%;
-}
-@media (max-width: 500px) {
-  :root {
-    font-size: 80%;
-  }
+  background-image: url('../images/bg.png');
 }
 .main-container {
   display: flex;
@@ -155,6 +151,7 @@ body {
   justify-content: 0;
   align-items: 0;
   font-size: 2rem;
+  font-family: 'Open Sans', sans-serif;
   margin: 0 15%;
 }
 @media (max-width: 500px) {
@@ -166,9 +163,11 @@ body {
   background-color: black;
   height: 0.3rem;
   width: 100%;
+  margin: 3rem 0;
 }
 .main-container header {
-  margin: 1rem 0;
+  margin: 2rem 0;
+  font-family: 'Gugi', cursive;
 }
 .main-container header ul {
   display: flex;
@@ -215,7 +214,7 @@ body {
 }
 @media (max-width: 500px) {
   .main-container .bio img {
-    min-width: 70%;
+    min-width: 60%;
     margin: 2rem 0;
   }
 }
@@ -230,6 +229,7 @@ body {
 .main-container .bio .job-title h1 {
   font-weight: bold;
   font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
   margin: 0.5rem 0;
 }
 @media (max-width: 500px) {
@@ -240,6 +240,7 @@ body {
 .main-container .bio .job-title h2 {
   font-weight: bold;
   font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
   margin: 0.5rem 0;
   text-align: center;
 }
@@ -260,6 +261,7 @@ body {
 .main-container #skills h2 {
   font-weight: bold;
   font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
   margin: 0.5rem 0;
 }
 @media (max-width: 500px) {
@@ -270,6 +272,7 @@ body {
 .main-container #skills h3 {
   font-weight: bold;
   font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
   margin: 0.5rem 0;
   margin: 1rem 0;
 }
@@ -292,6 +295,7 @@ body {
 .main-container #work h2 {
   font-weight: bold;
   font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
   margin: 0.5rem 0;
 }
 @media (max-width: 500px) {
@@ -302,6 +306,7 @@ body {
 .main-container #work #company {
   border-collapse: collapse;
   width: 100%;
+  margin: 3rem 0;
   text-align: center;
 }
 .main-container #work #company .head {
@@ -316,5 +321,5 @@ body {
   padding: 0.8rem 0;
 }
 .main-container #work #company tr:nth-child(even) {
-  background: whitesmoke;
+  background: #eFf;
 }

@@ -4,17 +4,18 @@
 
 :root {
 	font-size: 62%;
+	background-image: url('../images/bg.png');
 
-	@media (max-width: @mobileViewBreakpoint) {
-		font-size: 80%;
-	}
+	// @media (max-width: @mobileViewBreakpoint) {
+	// 	font-size: 70%;
+	// }
 }
 
 .main-container {
 	.flex(column, 0, 0);
 	font-size: @fontSize;
+	font-family: @fontBody;
 	margin: 0 @marginDesktop;
-	// background-image: url('images/circles-light.png');
 
 	@media (max-width: @mobileViewBreakpoint) {
 		margin: 0 @marginMobile;
@@ -24,10 +25,12 @@
 		background-color: @primaryColor;
 		height: 0.3rem;
 		width: 100%;
+		margin: 3rem 0;
 	}
 
 	header {
-		margin: (@fontSize / 2) 0;
+		margin: (@fontSize) 0;
+		font-family: @fontHeader;
 
 		ul {
 			.flex(row, space-between, baseline);
@@ -67,7 +70,8 @@
 			.border-radius(1rem);
 
 			@media (max-width: @mobileViewBreakpoint) {
-				min-width: 70%;
+				min-width: 60%;
+				// min-height: 20rem;
 				margin: 2rem 0;
 			}
 		}
@@ -129,6 +133,7 @@
 		#company {
 			border-collapse: collapse;
 			width: 100%;
+			margin: 3rem 0;
 			text-align: center;
 
 			.head {
@@ -148,8 +153,9 @@
 			}
 
 			tr:nth-child(even) {
-				background: whitesmoke;
+				background: #eFf;
 			}
+
 		}
 
 	}

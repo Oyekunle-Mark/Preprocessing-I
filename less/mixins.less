@@ -1,3 +1,5 @@
+@import 'variables.less';
+
 .flex(@direction, @justify, @align) {
   display: flex;
   flex-direction: @direction;
@@ -16,6 +18,7 @@
 .header(@fontSize) {
   font-weight: bold;
   font-size: @fontSize;
+  font-family: @fontSectionHeader;
   margin: 0.5rem 0;
 
   @media (max-width: @mobileViewBreakpoint) {

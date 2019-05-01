@@ -1,58 +1,156 @@
-// Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+@import 'reset.less';
+@import 'variables.less';
+@import 'mixins.less';
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+:root {
+	font-size: 62%;
+
+	@media (max-width: @mobileViewBreakpoint) {
+		font-size: 80%;
+	}
 }
 
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
+.main-container {
+	.flex(column, 0, 0);
+	font-size: @fontSize;
+	margin: 0 @marginDesktop;
+	// background-image: url('images/circles-light.png');
 
-html, body {
-		height: 100%;
+	@media (max-width: @mobileViewBreakpoint) {
+		margin: 0 @marginMobile;
+	}
+
+	hr {
+		background-color: @primaryColor;
+		height: 0.3rem;
+		width: 100%;
+	}
+
+	header {
+		margin: (@fontSize / 2) 0;
+
+		ul {
+			.flex(row, space-between, baseline);
+
+			li {
+				a {
+					color: @primaryColor;
+					text-decoration: none;
+					font-size: @fontSize * 1.5;
+
+					&:hover {
+						color: @alternateColor;
+					}
+				}
+			}
+
+			@media (max-width: @mobileViewBreakpoint) {
+				.flex(column, 0, center);
+			}
+		}
+	}
+
+	.bio {
+		.flex(row, space-between, 0);
+		margin: 3rem 0;
+
+		@media (max-width: @mobileViewBreakpoint) {
+			.flex(column, 0, center);
+			// width: 30rem;
+			// height: 30rem;
+		}
+
+		img {
+			max-width: 30%;
+			max-height: 20rem;
+			.border;
+			.border-radius(1rem);
+
+			@media (max-width: @mobileViewBreakpoint) {
+				min-width: 70%;
+				margin: 2rem 0;
+			}
+		}
+
+		.job-title {
+			.flex(column, 0, center);
+			width: 60%;
+			text-align: justify;
+
+			h1 {
+				.header(3rem);
+			}
+
+			h2 {
+				.header(2rem);
+				text-align: center;
+			}
+
+			article#intro {
+				margin: 1rem 0;
+				line-height: 2.5rem;
+			}
+
+			@media (max-width: @mobileViewBreakpoint) {
+				width: inherit;
+			}
+		}
+	}
+
+	#skills {
+		h2 {
+			.header(3rem);
+		}
+
+		h3 {
+			.header(2rem);
+			margin: 1rem 0;
+		}
+
+		ul {
+			list-style-type: square;
+			list-style-position: inside;
+		
+			li {
+				line-height: 2.5rem;
+			}
+		}
+
+		p {
+			.fonts;
+		}
+	}
+
+	#work {
+		h2 {
+			.header(3rem);
+		}
+
+		#company {
+			border-collapse: collapse;
+			width: 100%;
+			text-align: center;
+
+			.head {
+				background: skyblue;
+			}
+
+			th {
+				font-weight: bold;
+				color: @secondaryColor;
+				padding: 0.8rem 0;
+			}
+
+			tr {
+				td {
+					padding: 0.8rem 0;
+				}
+			}
+
+			tr:nth-child(even) {
+				background: whitesmoke;
+			}
+		}
+
+	}
 }

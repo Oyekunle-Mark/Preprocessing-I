@@ -134,3 +134,187 @@ html,
 body {
   height: 100%;
 }
+.border {
+  border: 1px solid black;
+}
+.fonts {
+  margin: 1rem 0;
+  line-height: 2.5rem;
+}
+:root {
+  font-size: 62%;
+}
+@media (max-width: 500px) {
+  :root {
+    font-size: 80%;
+  }
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: 0;
+  align-items: 0;
+  font-size: 2rem;
+  margin: 0 15%;
+}
+@media (max-width: 500px) {
+  .main-container {
+    margin: 0 2.5%;
+  }
+}
+.main-container hr {
+  background-color: black;
+  height: 0.3rem;
+  width: 100%;
+}
+.main-container header {
+  margin: 1rem 0;
+}
+.main-container header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.main-container header ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 3rem;
+}
+.main-container header ul li a:hover {
+  color: purple;
+}
+@media (max-width: 500px) {
+  .main-container header ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: 0;
+    align-items: center;
+  }
+}
+.main-container .bio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: 0;
+  margin: 3rem 0;
+}
+@media (max-width: 500px) {
+  .main-container .bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: 0;
+    align-items: center;
+  }
+}
+.main-container .bio img {
+  max-width: 30%;
+  max-height: 20rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+}
+@media (max-width: 500px) {
+  .main-container .bio img {
+    min-width: 70%;
+    margin: 2rem 0;
+  }
+}
+.main-container .bio .job-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: 0;
+  align-items: center;
+  width: 60%;
+  text-align: justify;
+}
+.main-container .bio .job-title h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 0.5rem 0;
+}
+@media (max-width: 500px) {
+  .main-container .bio .job-title h1 {
+    text-align: center;
+  }
+}
+.main-container .bio .job-title h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .main-container .bio .job-title h2 {
+    text-align: center;
+  }
+}
+.main-container .bio .job-title article#intro {
+  margin: 1rem 0;
+  line-height: 2.5rem;
+}
+@media (max-width: 500px) {
+  .main-container .bio .job-title {
+    width: inherit;
+  }
+}
+.main-container #skills h2 {
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 0.5rem 0;
+}
+@media (max-width: 500px) {
+  .main-container #skills h2 {
+    text-align: center;
+  }
+}
+.main-container #skills h3 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  margin: 1rem 0;
+}
+@media (max-width: 500px) {
+  .main-container #skills h3 {
+    text-align: center;
+  }
+}
+.main-container #skills ul {
+  list-style-type: square;
+  list-style-position: inside;
+}
+.main-container #skills ul li {
+  line-height: 2.5rem;
+}
+.main-container #skills p {
+  margin: 1rem 0;
+  line-height: 2.5rem;
+}
+.main-container #work h2 {
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 0.5rem 0;
+}
+@media (max-width: 500px) {
+  .main-container #work h2 {
+    text-align: center;
+  }
+}
+.main-container #work #company {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+.main-container #work #company .head {
+  background: skyblue;
+}
+.main-container #work #company th {
+  font-weight: bold;
+  color: white;
+  padding: 0.8rem 0;
+}
+.main-container #work #company tr td {
+  padding: 0.8rem 0;
+}
+.main-container #work #company tr:nth-child(even) {
+  background: whitesmoke;
+}

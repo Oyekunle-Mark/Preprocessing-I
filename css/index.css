@@ -141,6 +141,18 @@ body {
   margin: 1rem 0;
   line-height: 2.5rem;
 }
+.button {
+  font-weight: bold;
+  margin: 1rem 3rem 1rem 0;
+  background: skyblue;
+  color: white;
+  padding: 0.7em 2em;
+  box-shadow: 0 0.2rem 0.2rem gray;
+  border-radius: 0.5rem;
+}
+.button:hover {
+  cursor: pointer;
+}
 :root {
   font-size: 62%;
   background-image: url('../images/bg.png');
@@ -152,6 +164,7 @@ body {
   align-items: 0;
   font-size: 2rem;
   font-family: 'Open Sans', sans-serif;
+  line-height: 2.5rem;
   margin: 0 15%;
 }
 @media (max-width: 500px) {
@@ -321,5 +334,93 @@ body {
   padding: 0.8rem 0;
 }
 .main-container #work #company tr:nth-child(even) {
-  background: #eFf;
+  background: lightgray;
+}
+.main-container #work-and-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: 0;
+}
+@media (max-width: 500px) {
+  .main-container #work-and-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: 0;
+    align-items: center;
+    width: 100%;
+  }
+}
+.main-container #work-and-contact .contact {
+  width: 50%;
+  border-right: 1px solid black;
+}
+.main-container #work-and-contact .contact h2 {
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+  margin: 0.5rem 0;
+  margin: 2rem 0;
+}
+@media (max-width: 500px) {
+  .main-container #work-and-contact .contact h2 {
+    text-align: center;
+  }
+}
+.main-container #work-and-contact .contact div {
+  width: 100%;
+}
+.main-container #work-and-contact .contact div button {
+  font-weight: bold;
+  margin: 1rem 3rem 1rem 0;
+  background: skyblue;
+  color: white;
+  padding: 0.7em 2em;
+  box-shadow: 0 0.2rem 0.2rem gray;
+  border-radius: 0.5rem;
+}
+.main-container #work-and-contact .contact div button:hover {
+  cursor: pointer;
+}
+.main-container #work-and-contact .work-samples {
+  width: 50%;
+  margin-left: 1rem;
+}
+.main-container #work-and-contact .work-samples h2 {
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+  margin: 0.5rem 0;
+  margin: 2rem 0;
+}
+@media (max-width: 500px) {
+  .main-container #work-and-contact .work-samples h2 {
+    text-align: center;
+  }
+}
+.main-container #work-and-contact .work-samples ul li {
+  list-style-type: square;
+  list-style-position: inside;
+}
+.main-container #work-and-contact .work-samples ul li a {
+  color: purple;
+  text-decoration: none;
+}
+.main-container #work-and-contact .work-samples button {
+  font-weight: bold;
+  margin: 1rem 3rem 1rem 0;
+  background: skyblue;
+  color: white;
+  padding: 0.7em 2em;
+  box-shadow: 0 0.2rem 0.2rem gray;
+  border-radius: 0.5rem;
+}
+.main-container #work-and-contact .work-samples button:hover {
+  cursor: pointer;
+}
+.main-container footer {
+  margin: 7rem 0 2rem 0;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Gugi', cursive;
 }

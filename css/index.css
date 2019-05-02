@@ -242,8 +242,8 @@ body {
 }
 .main-container .bio img {
   align-self: center;
-  max-width: 25rem;
-  max-height: 25rem;
+  max-width: 22rem;
+  max-height: 22rem;
   border: 0.5rem solid skyblue;
   border-radius: 100%;
 }
@@ -405,17 +405,10 @@ body {
 .main-container #work-and-contact .contact div {
   width: 100%;
 }
-.main-container #work-and-contact .contact div button {
-  font-weight: bold;
-  margin: 1rem 3rem 1rem 0;
-  background: skyblue;
-  color: white;
-  padding: 0.7em 2em;
-  box-shadow: 0 0.2rem 0.2rem gray;
-  border-radius: 0.5rem;
-}
-.main-container #work-and-contact .contact div button:hover {
-  cursor: pointer;
+.main-container #work-and-contact .contact div i {
+  width: 5rem;
+  height: 5rem;
+  margin: 2rem 0;
 }
 .main-container #work-and-contact .work-samples {
   width: 50%;

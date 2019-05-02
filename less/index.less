@@ -77,7 +77,7 @@
 			align-self: center;
 			max-width: 22rem;
 			max-height: 22rem;
-			border: 0.5rem solid skyblue;
+			border: 0.5rem solid @buttonColor;
 			.border-radius(100%);
 
 			@media (max-width: @tabletViewBreakpoint) {
@@ -154,7 +154,7 @@
 			text-align: center;
 
 			.head {
-				background: skyblue;
+				background: @buttonColor;
 			}
 
 			th {
@@ -170,7 +170,7 @@
 			}
 
 			tr:nth-child(even) {
-				background: lightgray;
+				background: @tableStripeColor;
 			}
 		}
 	}
@@ -185,7 +185,7 @@
 
 		.contact {
 			width: 50%;
-			border-right: 1px solid black;
+			border-right: @border;
 
 			@media (max-width: @mobileViewBreakpoint) {
 				border: 0;

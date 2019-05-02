@@ -1,0 +1,38 @@
+@import 'variables.less';
+@import 'mixins.less';
+
+header {
+  margin: (@fontSize) 0;
+  font-family: @fontHeader;
+
+  ul {
+    .flex(row, space-between, baseline);
+
+    li {
+      a {
+        color: @primaryColor;
+        text-decoration: none;
+        font-size: @fontSize * 1.5;
+
+        &:hover {
+          color: @alternateColor;
+        }
+      } 
+
+      @media (max-width: @mobileViewBreakpoint) {
+        margin: 1.5rem 0;
+        border-bottom: @border;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: @tabletViewBreakpoint) {
+      .flex(row, space-between, baseline);
+    }
+
+    @media (max-width: @mobileViewBreakpoint) {
+      .flex(column, 0, center);
+    }
+  }
+}

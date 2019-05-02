@@ -406,9 +406,10 @@ body {
   width: 100%;
 }
 .main-container #work-and-contact .contact div i {
-  width: 5rem;
-  height: 5rem;
-  margin: 2rem 0;
+  margin: 2rem 2rem;
+}
+.main-container #work-and-contact .contact div i:hover {
+  cursor: pointer;
 }
 .main-container #work-and-contact .work-samples {
   width: 50%;

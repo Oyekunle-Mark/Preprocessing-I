@@ -75,13 +75,20 @@
 
 		img {
 			align-self: center;
-			max-width: 30%;
-			max-height: 20rem;
-			.border;
-			.border-radius(1rem);
+			max-width: 25rem;
+			max-height: 25rem;
+			border: 0.5rem solid skyblue;
+			.border-radius(100%);
+
+			@media (max-width: @tabletViewBreakpoint) {
+				max-width: 20rem;
+				max-height: 20rem;
+				margin: 2rem 0;
+			}
 
 			@media (max-width: @mobileViewBreakpoint) {
-				min-width: 60%;
+				max-width: 20rem;
+				max-height: 20rem;
 				margin: 2rem 0;
 			}
 		}

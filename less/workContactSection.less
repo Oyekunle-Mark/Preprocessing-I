@@ -1,0 +1,64 @@
+@import 'variables.less';
+@import 'mixins.less';
+
+#work-and-contact {
+  .flex(row, space-between, 0);
+
+  @media (max-width: @mobileViewBreakpoint) {
+    .flex(column, 0, center);
+    width: 100%;
+  }
+
+  .contact {
+    width: 50%;
+    border-right: @border;
+
+    @media (max-width: @mobileViewBreakpoint) {
+      border: 0;
+      text-align: center;
+    }
+
+    h2 {
+      .header(3rem);
+      margin: 2rem 0;
+    }
+
+    div {
+      width: 100%;
+
+      i {
+        margin: 2rem 2rem;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .work-samples {
+    width: 50%;
+    margin-left: 2rem;
+
+    h2 {
+      .header(3rem);
+      margin: 2rem 0;
+    }
+
+    ul {
+      li {
+        list-style-type: square;
+        list-style-position: inside;
+
+        a {
+          color: @alternateColor;
+          text-decoration: none;
+        }
+      }
+    }
+
+    button {
+      .button;
+    }
+  }
+}

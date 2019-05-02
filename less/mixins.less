@@ -1,0 +1,46 @@
+@import 'variables.less';
+
+.flex(@direction, @justify, @align) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.border-radius(@radius) {
+  border-radius: @radius;
+}
+
+.header(@fontSize) {
+  font-weight: bold;
+  font-size: @fontSize;
+  font-family: @fontSectionHeader;
+  margin: 1rem 0;
+
+  @media (max-width: @mobileViewBreakpoint) {
+    text-align: center;
+  }
+}
+
+.fonts {
+  margin: 1rem 0;
+  line-height: 2.5rem;
+}
+
+.button {
+  font-weight: bold;
+  margin: 1rem 3rem 1rem 0;
+  background: skyblue;
+  color: @secondaryColor;
+  padding: 0.7em 2em;
+  box-shadow: 0 0.2rem 0.2rem gray;
+  .border-radius(0.5rem);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
